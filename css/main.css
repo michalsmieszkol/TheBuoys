@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+h1 {
+  font-size: 5px;
+}
+
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
