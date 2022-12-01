@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   header .hero-img {
     background-image: url("../img/header-medium.jpg");
   }
