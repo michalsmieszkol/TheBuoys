@@ -48,6 +48,7 @@ nav .active {
 
 header {
   color: #fff;
+  float: none;
 }
 header h1 {
   text-transform: uppercase;
