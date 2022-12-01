@@ -8,6 +8,15 @@
     padding: 0;
 }
 
+@media(min-width: 1200px) {
+    header {
+        .hero-img {
+            background-image: url('../img/header-medium.jpg');
+        }
+    }
+}
+
+
 h1{
     font-size: 5px;
 }
@@ -100,10 +109,4 @@ header {
 }
 
 
-@media(min-width: 1200px) {
-    header {
-        .hero-img {
-            background-image: url('../img/header-medium.jpg');
-        }
-    }
-}
+
