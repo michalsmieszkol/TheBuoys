@@ -56,7 +56,7 @@ header h1 {
 header .hero-img {
   position: relative;
   height: 100vh;
-  background-image: url("../img/header-mini.jpg");
+  background-image: url("../img/header-medium.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
