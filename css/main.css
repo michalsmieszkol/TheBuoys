@@ -139,11 +139,11 @@ header .fa-chevron-down {
   color: #ddd;
   z-index: 1;
 }
-.aboutus-hero .aboutus-card-title {
+.aboutus-hero .aboutus-hero-title {
   font-size: 18px;
   text-transform: uppercase;
 }
-.aboutus-hero .aboutus-card-text {
+.aboutus-hero .aboutus-hero-text {
   font-size: 12px;
 }
 .aboutus-hero .aboutus-shadow {
@@ -153,6 +153,9 @@ header .fa-chevron-down {
   background-color: rgba(0, 0, 0, 0.7);
   top: 0;
   z-index: -5;
+}
+.aboutus-hero .aboutus-hero-item {
+  margin: 10px 0;
 }
 
 .flag {
@@ -181,6 +184,20 @@ header .fa-chevron-down {
     font-size: 10px;
   }
 }
+.portfolio .carousel-item {
+  position: relative;
+  height: 600px;
+}
+.portfolio .carousel-caption {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  right: 0;
+}
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url("../img/header-medium.jpg");

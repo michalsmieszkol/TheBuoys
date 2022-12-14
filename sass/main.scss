@@ -155,11 +155,11 @@ header {
 	color: #ddd;
 	z-index: 1;
 
-	.aboutus-card-title {
+	.aboutus-hero-title {
 		font-size: 18px;
 		text-transform: uppercase;
 	}
-	.aboutus-card-text {
+	.aboutus-hero-text {
 		font-size: 12px;
 	}
 	.aboutus-shadow {
@@ -169,6 +169,9 @@ header {
 		background-color: rgba(0, 0, 0, 0.7);
 		top: 0;
 		z-index: -5;
+	}
+	.aboutus-hero-item {
+		margin: 10px 0;
 	}
 }
 .flag {
@@ -197,6 +200,22 @@ header {
 	}
 	.navbar-nav {
 		font-size: 10px;
+	}
+}
+
+.portfolio {
+	.carousel-item {
+		position: relative;
+		height: 600px;
+	}
+	.carousel-caption {
+		position: absolute;
+		background-color: rgba(0, 0, 0, .8);
+		left: 0;
+		right: 0;
+	}
+	.carousel-indicators {
+		padding-bottom: 20px;
 	}
 }
 
