@@ -24,7 +24,7 @@ h2 {
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
-	background-color: #444;
+	background-color: $bg-color;
 }
 
 .shadow-bg {
@@ -210,7 +210,7 @@ header {
 	}
 	.carousel-caption {
 		position: absolute;
-		background-color: rgba(0, 0, 0, .8);
+		background-color: rgba(0, 0, 0, 0.8);
 		left: 0;
 		right: 0;
 	}
@@ -234,7 +234,7 @@ header {
 }
 
 @media (min-width: 992px) {
-	html {
-		scroll-padding-top: 72px;
+	.nav {
+		height: 82px;
 	}
 }

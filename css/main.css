@@ -22,7 +22,7 @@ h2 {
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
-  background-color: #444;
+  background-color: #ebecf2;
 }
 
 .shadow-bg {
@@ -210,7 +210,7 @@ header .fa-chevron-down {
   }
 }
 @media (min-width: 992px) {
-  html {
-    scroll-padding-top: 72px;
+  .nav {
+    height: 82px;
   }
 }/*# sourceMappingURL=main.css.map */
