@@ -234,6 +234,13 @@ header .fa-chevron-down {
   text-decoration: none;
 }
 
+.team {
+  position: relative;
+  background-image: url(../img/zespol/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url("../img/header-medium.jpg");

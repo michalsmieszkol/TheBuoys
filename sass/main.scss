@@ -228,7 +228,7 @@ header {
 		margin: 20px 10px;
 		padding: 30px;
 		background-color: $white;
-		box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 		transition: transform 0.3s;
 		h3 {
 			color: $main-color;
@@ -258,7 +258,12 @@ header {
 	}
 }
 
-
+.team {
+	position: relative;
+	background-image: url(../img/zespol/background.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
 
 @media (min-width: 1200px) {
 	header {
@@ -284,3 +289,4 @@ header {
 		}
 	}
 }
+
