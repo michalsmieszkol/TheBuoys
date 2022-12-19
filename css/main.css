@@ -10,6 +10,10 @@ html {
   scroll-padding-top: 82px;
 }
 
+.price-box {
+  margin: 20px;
+}
+
 h1 {
   font-size: 5px;
 }
@@ -198,6 +202,38 @@ header .fa-chevron-down {
   padding-bottom: 20px;
 }
 
+.prices .price-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+.prices .price-box h3 {
+  color: #039dff;
+  text-transform: uppercase;
+}
+.prices .price-box span {
+  font-weight: bold;
+}
+.prices .price-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.prices .price-box .price-tag {
+  font-weight: bold;
+  font-size: 22px;
+}
+.prices .price-box:hover {
+  transform: scale(1.05);
+}
+.prices .price-info {
+  margin-top: 30px;
+}
+.prices .price-info a {
+  text-decoration: none;
+}
+
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url("../img/header-medium.jpg");
@@ -212,5 +248,8 @@ header .fa-chevron-down {
 @media (min-width: 992px) {
   .nav {
     height: 82px;
+  }
+  .prices .price-info {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=main.css.map */

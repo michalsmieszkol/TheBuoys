@@ -12,6 +12,10 @@ html {
 	scroll-padding-top: 82px;
 }
 
+.price-box {
+	margin: 20px;
+}
+
 h1 {
 	font-size: 5px;
 }
@@ -219,6 +223,43 @@ header {
 	}
 }
 
+.prices {
+	.price-box {
+		margin: 20px 10px;
+		padding: 30px;
+		background-color: $white;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+		transition: transform 0.3s;
+		h3 {
+			color: $main-color;
+			text-transform: uppercase;
+		}
+		span {
+			font-weight: bold;
+		}
+		button {
+			padding: 10px 20px;
+			text-transform: uppercase;
+		}
+		.price-tag {
+			font-weight: bold;
+			font-size: 22px;
+		}
+	}
+	.price-box:hover {
+		transform: scale(1.05);
+	}
+
+	.price-info {
+		margin-top: 30px;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+
+
 @media (min-width: 1200px) {
 	header {
 		.hero-img {
@@ -236,5 +277,10 @@ header {
 @media (min-width: 992px) {
 	.nav {
 		height: 82px;
+	}
+	.prices {
+		.price-info {
+			font-size: 18px;
+		}
 	}
 }
