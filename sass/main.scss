@@ -11,10 +11,10 @@
 html {
 	scroll-padding-top: 82px;
 	width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
 }
 
 .price-box {
@@ -34,7 +34,6 @@ body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
 	background-color: $bg-color;
-	
 }
 
 .shadow-bg {
@@ -227,6 +226,20 @@ header {
 	.carousel-indicators {
 		padding-bottom: 20px;
 	}
+	.youtube {
+		overflow: hidden;
+		padding-bottom: 40.25%;
+		position: relative;
+		height: 0;
+
+		iframe {
+			position: absolute;
+			width: 100%;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
 }
 
 .prices {
@@ -270,7 +283,7 @@ header {
 	background-size: cover;
 	background-attachment: fixed;
 	z-index: 0;
-	h2{
+	h2 {
 		color: $bg-color;
 	}
 	.team-shadow {
@@ -278,7 +291,7 @@ header {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0,0,0,.6);
+		background-color: rgba(0, 0, 0, 0.6);
 		z-index: -5;
 	}
 	.card {
@@ -295,7 +308,6 @@ header {
 		margin-bottom: 20px;
 		text-align: center;
 		text-transform: uppercase;
-
 	}
 }
 
@@ -323,4 +335,3 @@ header {
 		}
 	}
 }
-

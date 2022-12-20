@@ -206,6 +206,19 @@ header .fa-chevron-down {
 .portfolio .carousel-indicators {
   padding-bottom: 20px;
 }
+.portfolio .youtube {
+  overflow: hidden;
+  padding-bottom: 40.25%;
+  position: relative;
+  height: 0;
+}
+.portfolio .youtube iframe {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .prices .price-box {
   margin: 20px 10px;
