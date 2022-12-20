@@ -230,11 +230,13 @@ header {
 		overflow: hidden;
 		padding-bottom: 40.25%;
 		position: relative;
-		height: 0;
+		height: 600px;
+
 
 		iframe {
 			position: absolute;
-			width: 100%;
+			width: 85.5%;
+			height: 100%;
 			left: 50%;
 			top: 50%;
 			transform: translate(-50%, -50%);
