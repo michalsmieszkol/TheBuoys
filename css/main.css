@@ -379,8 +379,7 @@ header .fa-chevron-down {
   position: relative;
   background-image: url(../img/contact.jpg);
   background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
+  background-position: center;
   z-index: 0;
 }
 .contact h2 {

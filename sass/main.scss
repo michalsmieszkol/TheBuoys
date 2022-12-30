@@ -321,8 +321,8 @@ header {
 	position: relative;
 	background-image: url(../img/contact.jpg);
 	background-size: cover;
-	background-position: top;
-	background-attachment: fixed;
+	background-position: center; //domyslnie top
+	// background-attachment: fixed;
 	z-index: 0;
 
 	h2 {
