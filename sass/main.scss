@@ -198,7 +198,7 @@ header {
 @media (max-width: 375px) {
 	header {
 		.hero-img {
-			background-image: url('../img/header-medium.jpg');
+			background-image: url('../img/header-min.jpg');
 		}
 		h1 {
 			font-size: 18px;
@@ -209,6 +209,14 @@ header {
 	}
 	.navbar-nav {
 		font-size: 10px;
+	}
+}
+
+@media (max-width: 600px) {
+	header {
+		.hero-img {
+			background-image: url('../img/header-mini.jpg');
+		}
 	}
 }
 
