@@ -112,6 +112,7 @@ body {
   position: relative;
   font-family: "Montserrat", sans-serif;
   background-color: #ebecf2;
+  overflow-x: hidden;
 }
 
 .shadow-bg {
@@ -358,6 +359,7 @@ header .fa-chevron-down {
 }
 .team .card {
   transition: transform 0.3s;
+  margin: 50px;
 }
 .team .card img {
   height: 300px;
