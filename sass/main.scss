@@ -214,6 +214,23 @@ header {
 		width: 400px;
 		height: 500px;
 		perspective: 800px;
+	justify-content: center;
+		
+		.text-box {
+			position: relative;
+		top: 30px;
+			background-color: rgba(0, 0, 0, 0.425);
+			height: auto;
+			width: 100%;
+			top: 50%;
+			text-align: center;
+			transform: translateY(-50%);
+	
+h1{
+	font-size: 36px;
+}
+		}
+		
 		
 	
 	
