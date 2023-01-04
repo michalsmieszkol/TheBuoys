@@ -263,6 +263,7 @@ header .fa-chevron-down {
 @media (max-width: 375px) {
   header .hero-img {
     background-image: url("../img/header-min.jpg");
+    background-attachment: unset;
   }
   header h1 {
     font-size: 18px;
@@ -272,6 +273,9 @@ header .fa-chevron-down {
   }
   .navbar-nav {
     font-size: 10px;
+  }
+  main .contact {
+    background-attachment: unset;
   }
 }
 @media (max-width: 600px) {
@@ -339,6 +343,11 @@ header .fa-chevron-down {
   text-decoration: none;
 }
 
+.icon {
+  width: 20px;
+  margin-bottom: 10px;
+}
+
 .team {
   position: relative;
   background-image: url("../img/zespol/teambackground.jpg");
@@ -379,14 +388,24 @@ header .fa-chevron-down {
 }
 
 .croatia {
-  height: 300px;
+  position: relative;
+  height: 600px;
+}
+.croatia .map {
+  position: absolute;
+  width: 50%;
+  left: 0px;
+}
+.croatia .map .google {
+  width: 100%;
 }
 
 .contact {
   position: relative;
   background-image: url(../img/contact.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
+  background-attachment: fixed;
   z-index: 0;
 }
 .contact h2 {
@@ -418,6 +437,13 @@ header .fa-chevron-down {
   color: #fff;
 }
 .contact .contact-us .contact-item .social-media a:hover {
+  color: #2a81b8;
+}
+.contact .contact-us .phone {
+  text-decoration: none;
+  color: #fff;
+}
+.contact .contact-us a:hover {
   color: #2a81b8;
 }
 

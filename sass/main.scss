@@ -1,5 +1,6 @@
 @import 'colors';
 @import 'animation';
+
 *,
 *::before,
 *::after {
@@ -34,7 +35,7 @@ body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
 	background-color: $bg-color;
-	overflow-x: hidden
+	overflow-x: hidden;
 }
 
 .shadow-bg {
@@ -200,6 +201,7 @@ header {
 	header {
 		.hero-img {
 			background-image: url('../img/header-min.jpg');
+			background-attachment: unset;
 		}
 		h1 {
 			font-size: 18px;
@@ -210,6 +212,12 @@ header {
 	}
 	.navbar-nav {
 		font-size: 10px;
+	}
+
+	main {
+		.contact {
+			background-attachment: unset;
+		}
 	}
 }
 
@@ -252,6 +260,8 @@ header {
 	}
 }
 
+// PRICES //
+
 .prices {
 	.price-box {
 		margin: 20px 10px;
@@ -287,6 +297,13 @@ header {
 	}
 }
 
+.icon {
+	width: 20px;
+	margin-bottom: 10px;
+}
+
+// TEAM //
+
 .team {
 	position: relative;
 	background-image: url('../img/zespol/teambackground.jpg');
@@ -309,7 +326,6 @@ header {
 		img {
 			height: 300px;
 			object-fit: cover;
-	
 		}
 		margin: 50px;
 	}
@@ -325,15 +341,28 @@ header {
 		height: 200px;
 	}
 }
+
 .croatia {
-	height: 300px;
+	position: relative;
+	height: 600px;
+
+	.map {
+		position: absolute;
+		width: 50%;
+		left: 0px;
+
+		.google {
+			width: 100%;
+		}
+	}
 }
+
 .contact {
 	position: relative;
 	background-image: url(../img/contact.jpg);
 	background-size: cover;
-	background-position: center; //domyslnie top
-	// background-attachment: fixed;
+	background-position: top;
+	background-attachment: fixed;
 	z-index: 0;
 
 	h2 {
@@ -349,10 +378,10 @@ header {
 	}
 	.contact-us {
 		color: $white;
-		
+
 		.contact-item {
 			margin: 30px 0;
-			
+
 			h3 {
 				margin-bottom: 15px;
 				letter-spacing: 2px;
@@ -364,9 +393,16 @@ header {
 					color: $white;
 				}
 				a:hover {
-					color: rgba($color: #2a81b8, $alpha: 1.0);
+					color: rgba($color: #2a81b8, $alpha: 1);
 				}
 			}
+		}
+		.phone {
+			text-decoration: none;
+			color: $white;
+		}
+		a:hover {
+			color: rgba($color: #2a81b8, $alpha: 1);
 		}
 	}
 }
