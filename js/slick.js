@@ -1,6 +1,7 @@
 $('.team-carousel').slick({
 	autoplay: true,
-	arrows: false,
+	arrows: true,
+
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	mobileFirst: true,
