@@ -371,7 +371,7 @@
 								<p><span>Ilość kabin:</span> 6 dwuosobowych</p>
 								<p><span>Ilość dostępnych miejsc:</span> 12</p>
 								<p class="price-tag">3499zł</p>
-								<button class="btn-secondary">zamawiam</button>
+								<a href="#contact"><button class="btn-secondary">zamawiam</button></a>
 							</div>
 						</div>
 						<div class="col-md-6 col-xl-3">
@@ -386,7 +386,7 @@
 								<p><span>Ilość kabin:</span> 6 dwuosobowych</p>
 								<p><span>Ilość miejsc:</span> 12</p>
 								<p class="price-tag">3499zł</p>
-								<button class="btn-secondary">zamawiam</button>
+								<a href="#contact"><button class="btn-secondary">zamawiam</button></a>
 							
 							</div>
 						</div>
@@ -404,7 +404,7 @@
 								<hr />
 								<p>Ubezpieczenia kaucji jachtu</p>
 								<hr />
-								<p>Opłaty portowe i paliwo</p>
+								<p>Opłaty portowe, paliwo, tourist-tax</p>
 								<hr />
 								<p>T-shirt załoganta</p>
 							</div>
@@ -603,4 +603,34 @@
 		<script src="./js/script.js"></script>
 		<script src="./js/slick.js"></script>
 	</body>
+	<footer><!-- Messenger Wtyczka czatu Code -->
+		<div id="fb-root"></div>
+	
+		<!-- Your Wtyczka czatu code -->
+		<div id="fb-customer-chat" class="fb-customerchat">
+		</div>
+	
+		<script>
+		  var chatbox = document.getElementById('fb-customer-chat');
+		  chatbox.setAttribute("page_id", "112138028431919");
+		  chatbox.setAttribute("attribution", "biz_inbox");
+		</script>
+	
+		<!-- Your SDK code -->
+		<script>
+		  window.fbAsyncInit = function() {
+			FB.init({
+			  xfbml            : true,
+			  version          : 'v15.0'
+			});
+		  };
+	
+		  (function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		  }(document, 'script', 'facebook-jssdk'));
+		</script></footer>
 </html>
