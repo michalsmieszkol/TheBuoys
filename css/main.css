@@ -121,14 +121,14 @@ body {
 }
 
 .blue-text {
-  color: #039dff;
+  color: rgb(3, 157, 255);
 }
 
 .underline {
   margin: 0 auto 40px;
   width: 60px;
   height: 4px;
-  background-color: #039dff;
+  background-color: rgb(3, 157, 255);
 }
 
 nav {
@@ -141,7 +141,7 @@ nav i {
   color: #fff;
 }
 nav a:hover {
-  color: #039dff;
+  color: rgb(3, 157, 255);
 }
 nav .fa-bars {
   padding: 10px;
@@ -150,7 +150,7 @@ nav .navbar-brand {
   font-weight: bold;
 }
 nav .active {
-  color: #039dff;
+  color: rgb(3, 157, 255);
 }
 
 header {
@@ -217,7 +217,7 @@ header .fa-chevron-down {
   transition: 0.3s;
 }
 .aboutus .aboutus-hover:hover {
-  color: #039dff;
+  color: rgb(3, 157, 255);
   transition: color 0.3s;
 }
 
@@ -312,6 +312,17 @@ header .fa-chevron-down {
   background-size: cover;
   border-radius: 15px;
   transition: 0.8s;
+}
+.test .flusher .pic .arrow {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 16px;
+  background-color: rgb(23, 19, 19);
+  width: 100%;
+  height: 0px;
+}
+.test .flusher .pic .arrow .arrow-icon {
+  padding: 10px;
 }
 
 .one {
@@ -524,7 +535,7 @@ a:hover {
   transition: transform 0.3s;
 }
 .prices .price-box h3 {
-  color: #039dff;
+  color: rgb(3, 157, 255);
   text-transform: uppercase;
 }
 .prices .price-box span {
@@ -645,16 +656,16 @@ a:hover {
   height: 200px;
 }
 
-.croatia {
+.about-trip {
   position: relative;
   height: 600px;
 }
-.croatia .map {
+.about-trip .map {
   position: absolute;
   width: 50%;
   left: 0px;
 }
-.croatia .map .google {
+.about-trip .map .google {
   width: 100%;
 }
 
@@ -723,6 +734,9 @@ a:hover {
   .prices .price-info {
     font-size: 18px;
   }
+  .arrow-icon {
+    display: none;
+  }
 }
 @media (max-width: 600px) {
   header .hero-img {
@@ -730,5 +744,10 @@ a:hover {
   }
   .card:hover {
     transform: none;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: end;
   }
 }/*# sourceMappingURL=main.css.map */
