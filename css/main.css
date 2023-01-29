@@ -658,15 +658,22 @@ a:hover {
 
 .about-trip {
   position: relative;
-  height: 600px;
 }
-.about-trip .map {
-  position: absolute;
-  width: 50%;
-  left: 0px;
-}
-.about-trip .map .google {
+.about-trip .google {
   width: 100%;
+  height: 100%;
+}
+.about-trip .box p {
+  text-align: justify;
+  letter-spacing: 2px;
+}
+.about-trip .box h2 {
+  letter-spacing: 4px;
+  font-size: 32px;
+}
+.about-trip .box h3 {
+  text-align: left;
+  letter-spacing: 2px;
 }
 
 .contact {
