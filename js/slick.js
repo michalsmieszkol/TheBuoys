@@ -21,4 +21,3 @@ $('.team-carousel').slick({
         
 	]
 });
-
