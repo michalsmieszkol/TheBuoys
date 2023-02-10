@@ -451,7 +451,7 @@ a:hover {
 		line-height: 1;
 		padding: 0;
 	}
-	
+
 	.carousel-item {
 		height: 600px;
 		position: relative;
@@ -467,7 +467,7 @@ a:hover {
 	}
 	.youtube {
 		overflow: hidden;
-		padding-bottom: 40.25%;
+		padding-bottom: 46.2%;
 		position: relative;
 		height: 600px;
 
@@ -490,11 +490,11 @@ a:hover {
 		height: 40px;
 	}
 
-	.carousel-control-next, .carousel-control-prev {
+	.carousel-control-next,
+	.carousel-control-prev {
 		&:hover {
-			background-color: rgba(0,0,0,.4);
+			background-color: rgba(0, 0, 0, 0.4);
 		}
-	
 	}
 }
 
@@ -662,53 +662,44 @@ a:hover {
 	height: 200px;
 }
 
-
 .about-trip {
 	position: relative;
 
-
 	.google {
-		position: relative;
 		width: 100%;
-		height: 400px;
-		border-radius: 10px;
+		height: 100%;
+		border-radius: 5px;
+		pointer-events: none;
+	}
+	.box-map {
+		position: relative;
+		height: 100%;
+		cursor: pointer;
 	}
 
 	.box {
-	
+		position: relative;
 		p {
 			text-align: justify;
-			letter-spacing: 2px;
+			// letter-spacing: 2px;
 		}
 		h2 {
 			letter-spacing: 4px;
-			font-size: 32px;
+			text-align: left;
 		}
 		h3 {
 			text-align: left;
 			letter-spacing: 2px;
 		}
 	}
-	.overlay {
-		background: transparent;
-		position: relative;
-		width: 640px;
-		height: 400px; /* your iframe height */
-		top: 400px; /* your iframe height */
-		margin-top: -400px; /* your iframe height */
-		z-index: 6;
-	}
+
 	li {
 		text-align: justify;
 		padding: 5px 0px;
-		
 	}
 	ul {
-		padding: 15px;
+		padding: 0px 15px;
 	}
-	
-
-	
 }
 
 .box {
@@ -720,8 +711,6 @@ a:hover {
 		border-radius: 5px;
 	}
 }
-	
-
 
 .contact {
 	position: relative;
@@ -817,5 +806,24 @@ a:hover {
 @media (max-width: 992px) {
 	.navbar-nav {
 		text-align: end; // na mobilnych nav po prawej
+	}
+}
+
+@media (max-width: 1400px) {
+	.test {
+		.flusher {
+			width: 300px;
+			height: 400px;
+		}
+	}
+}
+
+@media (max-width: 772px) {
+	.about-trip {
+		position: relative;
+
+		.google {
+			height: 300px;
+		}
 	}
 }
