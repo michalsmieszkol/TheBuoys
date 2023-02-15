@@ -494,6 +494,10 @@ a:hover {
   width: 40px;
   height: 40px;
 }
+.portfolio .carousel-control-next,
+.portfolio .carousel-control-prev {
+  z-index: 0;
+}
 .portfolio .carousel-control-next:hover,
 .portfolio .carousel-control-prev:hover {
   background-color: rgba(0, 0, 0, 0.4);
@@ -620,6 +624,7 @@ a:hover {
   height: 50px;
   background-color: rgba(113, 113, 113, 0.1568627451);
   border-radius: 50px;
+  z-index: 15;
 }
 
 .team-shadow {

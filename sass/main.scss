@@ -16,6 +16,7 @@ html {
 	margin: 0px;
 	padding: 0px;
 	overflow-x: hidden;
+	// font-size: 62.5%;
 }
 
 .price-box {
@@ -495,6 +496,7 @@ a:hover {
 		&:hover {
 			background-color: rgba(0, 0, 0, 0.4);
 		}
+		z-index: 0;
 	}
 }
 
@@ -599,6 +601,7 @@ a:hover {
 		background: none;
 		border: none;
 		font-size: 0;
+		
 	}
 	.slick-prev:before {
 		content: '\f104';
@@ -631,6 +634,7 @@ a:hover {
 		height: 50px;
 		background-color: #71717128;
 		border-radius: 50px;
+			z-index: 15;
 	}
 }
 
