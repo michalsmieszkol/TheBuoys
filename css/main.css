@@ -98,9 +98,13 @@ nav {
   z-index: 1;
   transition: background-color 0.6s;
 }
+nav .faq {
+  font-weight: bold;
+}
 nav a,
 nav i {
   color: #fff;
+  font-size: 20px;
 }
 nav a:hover {
   color: rgb(3, 157, 255);
@@ -162,6 +166,49 @@ header .fa-chevron-down {
   bottom: 20px;
   font-size: 30px;
   color: #fff;
+}
+
+.accordion {
+  margin: 60px auto;
+  width: 600px;
+}
+.accordion li {
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #e3edf7;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.accordion li label::before {
+  content: "+";
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.accordion li input[type=radio] {
+  display: none;
+}
+.accordion .content {
+  color: #555;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type=radio]:checked + label + .content {
+  max-height: 400px;
+  padding: 10px 10px 20px;
 }
 
 .aboutus i {
@@ -676,6 +723,12 @@ a:hover {
 }
 .about-trip .box {
   position: relative;
+  height: 100%;
+}
+.about-trip .box img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
 }
 .about-trip .box p {
   text-align: justify;
@@ -688,6 +741,9 @@ a:hover {
   text-align: left;
   letter-spacing: 2px;
 }
+.about-trip .box span {
+  font-weight: bold;
+}
 .about-trip li {
   text-align: justify;
   padding: 5px 0px;
@@ -695,10 +751,10 @@ a:hover {
 .about-trip ul {
   padding: 0px 15px;
 }
-
-.box {
-  height: 100%;
+.about-trip .text-muted {
+  font-size: 18px;
 }
+
 .box img {
   height: 100%;
   width: 100%;

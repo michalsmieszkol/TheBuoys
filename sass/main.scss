@@ -59,10 +59,14 @@ nav {
 	text-transform: uppercase;
 	z-index: 1;
 	transition: background-color 0.6s;
+	.faq {
+		font-weight: bold;
+	}
 
 	a,
 	i {
 		color: $white;
+		font-size: 20px;
 	}
 
 	a:hover {
@@ -135,6 +139,53 @@ header {
 		bottom: 20px;
 		font-size: 30px;
 		color: $white;
+	}
+}
+
+.accordion {
+	margin: 60px auto;
+	width: 600px;
+
+	li {
+		list-style: none;
+		width: 100%;
+		margin: 20px;
+		padding: 10px;
+		border-radius: 8px;
+		background: #e3edf7;
+		box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+		label {
+			display: flex;
+			align-items: center;
+			padding: 10px;
+			font-size: 18px;
+			font-weight: 500;
+			cursor: pointer;
+		}
+		label::before {
+			content: '+';
+			margin-right: 10px;
+			font-size: 24px;
+			font-weight: 600;
+		}
+		input[type="radio"]{
+			display: none;
+		}
+
+	}
+
+	.content {
+		color: #555;
+		padding: 0 10px;
+		line-height: 26px;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.5s, padding 0.5s;
+	}
+
+	input[type="radio"]:checked + label + .content{
+		max-height: 400px;
+		padding: 10px 10px 20px;
 	}
 }
 
@@ -601,7 +652,6 @@ a:hover {
 		background: none;
 		border: none;
 		font-size: 0;
-		
 	}
 	.slick-prev:before {
 		content: '\f104';
@@ -634,7 +684,7 @@ a:hover {
 		height: 50px;
 		background-color: #71717128;
 		border-radius: 50px;
-			z-index: 15;
+		z-index: 15;
 	}
 }
 
@@ -683,6 +733,14 @@ a:hover {
 
 	.box {
 		position: relative;
+		height: 100%;
+
+		img {
+			height: 100%;
+			width: 100%;
+			border-radius: 5px;
+		}
+
 		p {
 			text-align: justify;
 			// letter-spacing: 2px;
@@ -695,6 +753,10 @@ a:hover {
 			text-align: left;
 			letter-spacing: 2px;
 		}
+
+		span {
+			font-weight: bold;
+		}
 	}
 
 	li {
@@ -704,11 +766,13 @@ a:hover {
 	ul {
 		padding: 0px 15px;
 	}
+
+	.text-muted {
+		font-size: 18px;
+	}
 }
 
 .box {
-	height: 100%;
-
 	img {
 		height: 100%;
 		width: 100%;
