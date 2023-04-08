@@ -146,6 +146,7 @@ header {
 .accordion {
 	margin: 20px auto;
 	width: 600px;
+	
 
 	li {
 		list-style: none;
@@ -155,6 +156,8 @@ header {
 		border-radius: 8px;
 		background: #e3edf7;
 		box-shadow: none;
+		
+		
 
 		label {
 			display: flex;
@@ -179,9 +182,10 @@ header {
 		color: #555;
 		padding: 0 10px;
 		line-height: 26px;
-		max-height: 0;
+		max-height: 100;
 		overflow: hidden;
 		transition: max-height 0.5s, padding 0.5s;
+		
 	}
 
 	input[type='radio']:checked + label + .content {
@@ -297,4 +301,5 @@ header {
 			width: auto;
 		}
 	}
+	
 }

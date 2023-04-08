@@ -203,7 +203,7 @@ header .fa-chevron-down {
   color: #555;
   padding: 0 10px;
   line-height: 26px;
-  max-height: 0;
+  max-height: 100;
   overflow: hidden;
   transition: max-height 0.5s, padding 0.5s;
 }
