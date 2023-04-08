@@ -57,10 +57,6 @@ html {
   overflow-x: hidden;
 }
 
-.price-box {
-  margin: 20px;
-}
-
 h1 {
   font-size: 5px;
 }
@@ -68,6 +64,7 @@ h1 {
 h2 {
   text-align: center;
   text-transform: uppercase;
+  color: #fff;
 }
 
 body {
@@ -274,17 +271,6 @@ header .fa-chevron-down {
   color: #2a81b8;
 }
 
-@media (min-width: 1200px) {
-  header .hero-img {
-    background-image: url("../img/header-medium.jpg");
-  }
-  header h1 {
-    font-size: 40px;
-  }
-  header p {
-    font-size: 22px;
-  }
-}
 @media (min-width: 992px) {
   .nav {
     height: 82px;
@@ -297,9 +283,6 @@ header .fa-chevron-down {
   }
 }
 @media (max-width: 600px) {
-  header .hero-img {
-    background-image: url("../img/header-mini.jpg");
-  }
   .card:hover {
     transform: none;
   }
@@ -309,17 +292,20 @@ header .fa-chevron-down {
     text-align: end;
   }
 }
-@media (max-width: 1400px) {
-  .test .flusher {
-    width: 300px;
-    height: 400px;
+@media (max-width: 600px) {
+  .contact {
+    background-attachment: unset;
   }
-}
-@media (max-width: 772px) {
-  .about-trip {
-    position: relative;
+  .faq {
+    background-image: unset;
+    background-color: rgba #051c2a;
   }
-  .about-trip .google {
-    height: 300px;
+  .accordion {
+    margin: -10px auto;
+  }
+  .accordion li {
+    margin: 20px;
+    padding: 10px;
+    width: auto;
   }
 }/*# sourceMappingURL=faq.css.map */

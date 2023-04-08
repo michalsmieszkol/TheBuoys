@@ -7,7 +7,6 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-    
 }
 
 html {
@@ -17,12 +16,7 @@ html {
 	margin: 0px;
 	padding: 0px;
 	overflow-x: hidden;
-
 	// font-size: 62.5%;
-}
-
-.price-box {
-	margin: 20px;
 }
 
 h1 {
@@ -32,6 +26,7 @@ h1 {
 h2 {
 	text-align: center;
 	text-transform: uppercase;
+	color: $white;
 }
 
 body {
@@ -145,9 +140,8 @@ header {
 }
 
 .faq {
-    background-image: url(../img/contact.jpg);
+	background-image: url(../img/contact.jpg);
 }
-
 
 .accordion {
 	margin: 20px auto;
@@ -176,10 +170,9 @@ header {
 			font-size: 24px;
 			font-weight: 600;
 		}
-		input[type="radio"]{
+		input[type='radio'] {
 			display: none;
 		}
-
 	}
 
 	.content {
@@ -191,24 +184,23 @@ header {
 		transition: max-height 0.5s, padding 0.5s;
 	}
 
-	input[type="radio"]:checked + label + .content{
+	input[type='radio']:checked + label + .content {
 		max-height: 400px;
 		padding: 10px 10px 20px;
 	}
 
-    input[type="radio"]:checked + label::before{
-        content: '-';
+	input[type='radio']:checked + label::before {
+		content: '-';
 	}
 }
 
 .faq {
-    position: relative;
-  background-color: #051c2a;
-  background-attachment: fixed;
-  z-index: 0;
-  background-size: cover;
+	position: relative;
+	background-color: #051c2a;
+	background-attachment: fixed;
+	z-index: 0;
+	background-size: cover;
 }
-
 
 .contact {
 	position: relative;
@@ -261,20 +253,6 @@ header {
 	}
 }
 
-@media (min-width: 1200px) {
-	header {
-		.hero-img {
-			background-image: url('../img/header-medium.jpg');
-		}
-		h1 {
-			font-size: 40px;
-		}
-		p {
-			font-size: 22px;
-		}
-	}
-}
-
 @media (min-width: 992px) {
 	.nav {
 		height: 82px;
@@ -291,11 +269,6 @@ header {
 }
 
 @media (max-width: 600px) {
-	header {
-		.hero-img {
-			background-image: url('../img/header-mini.jpg');
-		}
-	}
 	.card:hover {
 		transform: none;
 	}
@@ -307,21 +280,21 @@ header {
 	}
 }
 
-@media (max-width: 1400px) {
-	.test {
-		.flusher {
-			width: 300px;
-			height: 400px;
-		}
+@media (max-width: 600px) {
+	.contact {
+		background-attachment: unset;
 	}
-}
 
-@media (max-width: 772px) {
-	.about-trip {
-		position: relative;
-
-		.google {
-			height: 300px;
+	.faq {
+		background-image: unset;
+		background-color: rgba#051c2a;
+	}
+	.accordion {
+		margin: -10px auto;
+		li {
+			margin: 20px;
+			padding: 10px;
+			width: auto;
 		}
 	}
 }
