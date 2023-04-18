@@ -198,7 +198,7 @@ header {
 		font-size: 18px;
 		text-transform: uppercase;
 	}
-	.aboutus-card-text {
+	.card-text {
 		font-size: 12px;
 	}
 	.aboutus-hover {
@@ -714,6 +714,9 @@ a:hover {
 }
 .card-body {
 	height: 200px;
+}
+.card-text {
+	font-size: 15px;
 }
 
 .about-trip {
